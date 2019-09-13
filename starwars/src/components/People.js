@@ -4,7 +4,7 @@ import React from "react";
 function People (props){
 // const People = props => {
 
-const { name, height, mass, birth_year, gender,skin_color } = props;
+const { name, height, mass, birth_year, gender,skin_color } = props.data;
   return (
     <div >
       <h2><span>Name:</span> {name}</h2>
