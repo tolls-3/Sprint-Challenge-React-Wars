@@ -37,7 +37,7 @@ const App = () => {
 
   return (
     <SyledDivApp className="App">
-      <h1 className="Header">React Wars</h1>
+      <StyledHeader className="Header">React Wars</StyledHeader>
       <Peoplelist data={currentState.character} />
     </SyledDivApp>
   );
@@ -51,4 +51,13 @@ const SyledDivApp = styled.div`
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
+`;
+
+const StyledHeader = styled.h1`
+
+  font-size: 2rem;
+  background-color: tomato;
+  padding: 20px;
+  color: black;
+
 `;
