@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import axios from 'axios';
+import styled from 'styled-components';
 import './App.css';
 import Peoplelist from './components/Peoplelist';
 
@@ -35,11 +36,19 @@ const App = () => {
     }, []); 
 
   return (
-    <div className="App">
+    <SyledDivApp className="App">
       <h1 className="Header">React Wars</h1>
       <Peoplelist data={currentState.character} />
-    </div>
+    </SyledDivApp>
   );
 }
 
 export default App;
+
+const SyledDivApp = styled.div`
+  border:2px solid red;
+  text-align: center; 
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+`;
