@@ -4,6 +4,7 @@ import styled from "styled-components";
 import "./App.css";
 import Peoplelist from "./components/Peoplelist";
 
+
 const peopleApi = "https://swapi.co/api/people/";
 
 const App = () => {

@@ -6,22 +6,22 @@ function People(props) {
   return (
     <SyledDivPo className="stylePo">
       <h2>
-        <span>Name:</span> {name}
+        Name: {name}
       </h2>
       <p>
-        <span>Height:</span> {height}
+        Height: {height}
       </p>
       <p>
-        <span>Mass:</span> {mass}
+        Mass:{mass}
       </p>
       <p>
-        <span>Birth Year:</span> {birth_year}
+        Birth Year: {birth_year}
       </p>
       <p>
-        <span>Gender:</span> {gender}
+        Gender: {gender}
       </p>
       <p>
-        <span>Skin Color:</span> {skin_color}
+        Skin Color: {skin_color}
       </p>
     </SyledDivPo>
   );
