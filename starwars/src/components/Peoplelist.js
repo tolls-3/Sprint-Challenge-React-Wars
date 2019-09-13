@@ -16,3 +16,5 @@ function Peoplelist (props){
 
   );
 };
+
+export default Peoplelist;
