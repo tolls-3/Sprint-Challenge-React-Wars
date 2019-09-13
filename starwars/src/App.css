@@ -130,7 +130,6 @@ table {
 
 /* write your parent styles in here for your App.js */
 
-.stylePo{
+.stylePo {
   background-image: url(./components/star.jpg);
-  /* color:rgb(233, 52, 6); */
 }
