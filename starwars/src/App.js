@@ -22,7 +22,7 @@ const App = () => {
   useEffect(() =>{
     axios.get(peopleApi)
         .then(res => {
-          // debugger;
+          //debugger;
           updateCurrentState({
           character:res.data.results
           });
@@ -46,18 +46,24 @@ const App = () => {
 export default App;
 
 const SyledDivApp = styled.div`
-  border:2px solid red;
+  /* border:2px solid red; */
   text-align: center; 
-  max-width: 900px;
-  width: 100%;
+  max-width: 1440px;
+  width: 99%;
   margin: 0 auto;
 `;
 
 const StyledHeader = styled.h1`
-
+  position: fixed;
+  top: 0px;
+  width:96%;
+  font-family: Georgia, sans-serif;
+  text-transform: uppercase;
   font-size: 2rem;
-  background-color: tomato;
+  background-color: rgb(233, 52, 6);
   padding: 20px;
   color: black;
+  margin-right:2px;
 
 `;
+

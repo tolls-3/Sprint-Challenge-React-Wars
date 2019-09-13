@@ -1,20 +1,27 @@
 import React from "react";
 import People from "./People";
+import styled from 'styled-components';
 
 
-
-function Peoplelist (props){
-// const Peoplelist = props => {
-    
+function Peoplelist (props){    
   return (
-    <div>
+    <SyledDivP>
       
       {props.data.map(character => (
         <People key={character} data={character} />
       ))}
-    </div>
+    </SyledDivP>
 
   );
 };
 
 export default Peoplelist;
+
+const SyledDivP = styled.div`
+    /* border:2px solid blue;; */
+    margin:80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    
+`;
